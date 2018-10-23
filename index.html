@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Device Orientation - Vertical scroll
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <meta name="theme-color" content="#000000">
+  </head>
+
+  <body>
+
+    <main class="Wrapper">
+      <div class="Wrapper-canvas">
+        <div class="Background">
+          <div class="Background-static"></div>
+          <div class="Background-parallax"></div>
+        </div>
+        <div class="Wrapper-content">
+          <div class="Block Block--top">
+            <p class="Block-message">Top</p>
+          </div>
+          <div class="Block Block--middle">
+            <p class="Block-message">Middle</p>
+          </div>
+          <div class="Block Block--bottom">
+            <p class="Block-message">Bottom</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="Debug">
+      <p class="Debug-block">
+        <span class="Debug-title">α</span>
+        <strong class="Debug-value Debug-value--alpha"></strong>
+      </p>
+      <p class="Debug-block">
+        <span class="Debug-title">β</span>
+        <strong class="Debug-value Debug-value--beta"></strong>
+      </p>
+      <p class="Debug-block">
+        <span class="Debug-title">γ</span>
+        <strong class="Debug-value Debug-value--gamma"></strong>
+      </p>
+      <p class="Debug-block">
+        <span class="Debug-title">β'</span>
+        <strong class="Debug-value Debug-value--betaModified"></strong>
+      </p>
+      <p class="Debug-block">
+        <span class="Debug-title">top</span>
+        <strong class="Debug-value Debug-value--top"></strong>
+      </p>
+    </div>
+
+    <script src="./assets/js/parallax.js"></script>
+    <script src="./assets/js/device-orientation.js"></script>
+    <script src="https://orangespaceman.github.io/lab-badge/lab-badge.min.js"></script>
+
+  </body>
+</html>

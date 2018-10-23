@@ -1,0 +1,124 @@
+/* elements */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #345;
+  font-family: Georgia, serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body.has-deviceOrientation {
+  overflow: hidden;
+}
+
+/* Wrapper */
+
+.Wrapper {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body.has-deviceOrientation .Wrapper {
+  overflow: hidden;
+}
+
+/* Wrapper canvas - used to position background images */
+
+.Wrapper-canvas {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Wrapper content - constrain proportions */
+
+.Wrapper-content {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Backgrounds - position below content */
+
+.Background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Background-static,
+.Background-parallax {
+  background-image: url(../img/bg-static.png);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+  transform: translate3d(0, 0, 0);
+}
+
+.Background-parallax {
+  background-image: url(../img/bg-parallax.png);
+}
+
+/* Blocks */
+
+.Block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.Block-message {
+  font-size: 4rem;
+  text-shadow: 3px 3px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+/* debug */
+
+.Debug {
+  display: none;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.2rem;
+  z-index: 3;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.Debug-block {
+  margin: 0;
+}
+
+body.has-deviceOrientation .Debug {
+  display: flex;
+}
